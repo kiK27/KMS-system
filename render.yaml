@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: wikijs
+    env: docker
+    plan: free
+    region: oregon
+    dockerComposePath: ./docker-compose.yml
