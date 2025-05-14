@@ -9,7 +9,7 @@ services:
       POSTGRES_PASSWORD: wikijsrocks
       POSTGRES_DB: wiki
     volumes:
-      - db-data:/var/lib/postgresql/data
+      - /var/lib/postgresql/data
 
   wiki:
     image: ghcr.io/requarks/wiki:2
@@ -25,6 +25,3 @@ services:
       DB_NAME: wiki
     depends_on:
       - db
-
-volumes:
-  db-data:
