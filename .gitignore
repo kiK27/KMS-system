@@ -1,3 +1,5 @@
-.env
-*.log
-node_modules/
+echo "node_modules/" >> .gitignore
+echo ".env" >> .gitignore
+echo "data/" >> .gitignore
+echo "docker/postgres" >> .gitignore
+echo "docker/mongodb" >> .gitignore
